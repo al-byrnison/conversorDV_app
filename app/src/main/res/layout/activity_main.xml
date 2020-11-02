@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:background="#FFEB3B"
     android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context="cl.alf.conversordv.MainActivity">
 
 
@@ -16,12 +17,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=" Moneda Actual"
-        android:textSize="24sp" />
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/monedaActualSP"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:spinnerMode="dialog" />
 
     <TextView
@@ -29,25 +33,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Moneda cambio"
-        android:textSize="24sp" />
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/monedaCambioSP"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="52dp"
         android:layout_gravity="center_horizontal"
-        android:entries="@array/monedas"/>
+        android:entries="@array/monedas" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Valor a Cambiar"
-        android:textSize="24sp" />
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/valorCambioET"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="95dp"
         android:ems="10"
         android:inputType="numberDecimal" />
 
@@ -61,21 +70,20 @@
             android:layout_width="106dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="#3F51B5"
+            android:onClick="clickConvertir"
             android:text="Procesar Cambio"
-            android:onClick="clickConvertir"/>
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/acercaDeBT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Acerca de" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/resultadoTV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="107dp"
         android:text="El valor de cambio es: "
-        android:textSize="24sp" />
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="italic" />
 </LinearLayout>

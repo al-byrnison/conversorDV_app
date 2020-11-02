@@ -4,5 +4,8 @@
         <item>USD</item>
         <item>EUR</item>
         <item>CLP</item>
+        <item>NZD</item>
+        <item>JPY</item>
+        <item>BCV</item>
     </string-array>
 </resources>
